@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+
+    <title>Aurum - VIP Finance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
+
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Screenshot 2024-08-24 115804.png" alt="Aurum Logo" />
+            <span>Aurum</span>
+        </div>
+        <button class="get-started-btn">Get Started</button>
+    </nav>
+
+    <div id="particle-container"></div> <!-- Particle Background -->
+
+    <section id="section1" class="hero-section">
+        <div class="card-container">
+            <img src="file (2).png" alt="Luxury Credit Card" class="credit-card" />
+        </div>
+        <div class="hero-text">
+            <h1>Exclusivity Redefined.</h1>
+            <p>Unparalleled luxury meets cutting-edge technology. Welcome to the elite experience of Aurum.</p>
+            <p>For those who demand the best, nothing less.</p>
+            <button class="learn-more-btn" onclick="scrollToSection('section2')">Discover More</button>
+        </div>
+    </section>
+<link rel="stylesheet" href="style.css">
+    <section id="section2" class="next-section">
+        <div class="next-content">
+            <img src="3d-credit-card.png" alt="Aurum Card Features" class="next-image" />
+            <div class="next-text">
+                <h2>Unmistakably Yours.</h2>
+                <p>Experience the next level of financial freedom with our tailored solutions.</p>
+                <p>Unlock exclusive benefits and elevate your lifestyle.</p>
+                <button class="get-yours-btn" onclick="scrollToSection('section3')">Get Yours</button>
+                <button class="learn-more-btn" onclick="scrollToSection('section3')">Learn More</button>
+            </div>
+        </div>
+    </section>
+<link rel="stylesheet" href="style.css">
+    <!-- New Section (Third Section) -->
+    <section id="section3" class="third-section">
+        <div class="third-content">
+            <div class="third-text">
+                <h2>Peaceful Shopping. Mindful Money.</h2>
+                <p>See how we can help with making your shopping experience and money management more seamless.</p>
+                <div class="app-buttons">
+                    <button class="app-store-btn"><i class="fab fa-apple"></i> Download on the App Store</button>
+                    <button class="play-store-btn"><i class="fab fa-google-play"></i> Get it on Google Play</button>
+                </div>
+            </div>
+            <div class="third-cards">
+                <div class="card-item blue">
+                    <i class="fas fa-wallet"></i>
+                    <p>Multicurrency Account</p>
+                    <p>Many currencies for all your needs</p>
+                </div>
+                <div class="card-item black">
+                    <i class="fas fa-credit-card"></i>
+                    <p>Cards</p>
+                    <p>TWIN Mastercard for shopping enlightenment</p>
+                </div>
+                <div class="card-item red">
+                    <i class="fas fa-exchange-alt"></i>
+                    <p>Top-up & Sendouts</p>
+                    <p>Transfer your funds the way you want</p>
+                </div>
+                <div class="card-item blue">
+                    <i class="fab fa-google-pay"></i>
+                    <p>Google Pay</p>
+                    <p>Pay anywhere, the way you like with TWIN and Google Pay</p>
+                </div>
+                <div class="card-item orange">
+                    <i class="fab fa-apple-pay"></i>
+                    <p>Apple Pay</p>
+                    <p>Pay anywhere, the way you like with TWIN and Apple Pay</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<link rel="stylesheet" href="style.css">
+
+
+
+<section id="payment-form">
+    <div class="payment-container">
+      <div class="payment-left">
+        <h2>Aurum</h2>
+        <form id="paymentForm">
+          <div class="form-group">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" maxlength="19" placeholder="Enter the 16-digit card number" oninput="updateCardNumber()">
+          </div>
+          <link rel="stylesheet" href="style.css">
+          <div class="form-group">
+            <label for="cardName">Card Name Holder</label>
+            <input type="text" id="cardName" placeholder="Enter the name on the card" oninput="updateCardName()">
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV Number</label>
+            <input type="text" id="cvv" maxlength="4" placeholder="Enter the 3 or 4 digits number">
+          </div>
+          <div class="form-group">
+            <label for="expiryDate">Expiry Date</label>
+            <input type="text" id="expiryMonth" maxlength="2" placeholder="MM" oninput="updateExpiry()">
+            <span>/</span>
+            <input type="text" id="expiryYear" maxlength="2" placeholder="YY" oninput="updateExpiry()">
+          </div>
+          <button type="button" onclick="processPayment()">Pay Now</button>
+        </form>
+        <link rel="stylesheet" href="style.css">
+      </div>
+      <link rel="stylesheet" href="style.css">
+      <div class="payment-right">
+        <div class="card-preview">
+          <div class="card-logo"></div>
+          <div class="card-number" id="displayCardNumber">**** **** **** ****</div>
+          <div class="card-name" id="displayCardName">John Doe</div>
+          <div class="card-expiry" id="displayCardExpiry">MM / YY</div>
+        </div>
+        <link rel="stylesheet" href="style.css">
+        <div class="order-details">
+          <p>Order Number: <strong>15042022</strong></p>
+          <p>Product: <strong>iPhone 13 Pro</strong></p>
+          <p>VAT (10%): <strong>$50.00</strong></p>
+          <p>Total: <strong>1,255 USD</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<link rel="stylesheet" href="style.css">
+  <section id="section5">
+    <div class="section5-container">
+        <!-- Left Side with Transparent Image -->
+        <div class="section5-left">
+            <img src="file (5).png" alt="Transparent Image" class="transparent-img">
+        </div>
+        <link rel="stylesheet" href="style.css">
+        <!-- Right Side with Creative Content -->
+        <div class="section5-right">
+            <div class="quick-easy-account">
+                <h2>Quick & Easy Account Creation</h2>
+                <p>Creating your account has never been simpler! Enjoy a seamless sign-up process with our user-friendly interface. Register in just a few clicks and start experiencing our premium services.</p>
+                <p>Benefits:</p>
+                <ul>
+                    <li>Instant Access</li>
+                    <li>Easy Setup</li>
+                    <li>Secure and Safe</li>
+                </ul>
+                <p>Join us today and unlock exclusive features designed to enhance your experience!</p>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="style.css">
+
+</section>
+<link rel="stylesheet" href="style.css">
+<!-- Final Section -->
+<section class="final-section">
+    <div class="final-content">
+        <div class="final-logo">
+            <img src="Screenshot 2024-08-24 115804.png" alt="Aurum Logo">
+        </div>
+        <div class="final-info">
+            <h1>Aurum</h1>
+            <link rel="stylesheet" href="style.css">
+            <p>© 2024 Aurum. All rights reserved. Aurum is a premium brand created for illustration purposes. The content on this website, including text, images, and other material, is provided for informational and illustrative purposes only. Aurum does not provide financial, legal, or professional services. Any resemblance to real products or services is purely coincidental.</p>
+            <p>The Aurum website may include links to external websites or resources for convenience and informational purposes. Aurum is not responsible for the content or accuracy of these external websites. Users should exercise caution when visiting external links.</p>
+            <p>By using this website, you agree to these terms and conditions. For any questions or concerns, please contact us at info@aurum.com.</p>
+            <div class="footer-links">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</section>
+<link rel="stylesheet" href="style.css">
+</body>
+</html>
+    <script src="script.js"></script>
+</body>
+
+</html>
